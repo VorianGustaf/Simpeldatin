@@ -1,0 +1,79 @@
+/* Admin dashboard styles (simple AdminLTE-like) */
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;background:#f4f6f9;color:#222}
+.header{height:64px;background:#2f3f1f;color:#fff;display:flex;align-items:center;gap:18px;padding:0 20px}
+.header .logo{display:flex;align-items:center;gap:10px}
+.header .logo img{height:36px}
+.header .title{font-weight:700;font-size:18px}
+.header .user{margin-left:auto}
+
+.wrap{display:flex;min-height:calc(100vh - 64px)}
+.sidebar{width:220px;background:#27381a;color:#fff;padding:18px}
+.sidebar .nav{list-style:none;padding:0;margin:0}
+.sidebar .nav li{padding:12px 10px;border-radius:6px;margin-bottom:8px}
+.sidebar .nav li a{color:#fff;text-decoration:none;display:block}
+.sidebar .nav li:hover{background:rgba(255,255,255,0.03)}
+
+.content{flex:1;padding:20px 28px}
+.metrics{display:flex;gap:18px;margin-bottom:18px;flex-wrap:wrap}
+.card{background:#fff;border-radius:8px;padding:18px;flex:1;min-width:180px;box-shadow:0 6px 14px rgba(0,0,0,0.06)}
+.card h3{margin:0 0 8px;font-size:14px;color:#6b7a63}
+.card .value{font-size:28px;font-weight:800;color:#213016}
+
+.row{display:flex;gap:18px}
+.col{flex:1}
+.widget{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 14px rgba(0,0,0,0.06)}
+.widget h4{margin-top:0}
+.chart-placeholder{height:220px;background:linear-gradient(180deg,#eef4f0,#f7fafb);border-radius:6px;border:1px dashed #e0e6e2;display:flex;align-items:center;justify-content:center;color:#98a79a}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #eef0f2;text-align:left}
+
+/* Ringkasan / Notifikasi */
+.notif-list{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.notif-item{display:flex;align-items:center;gap:12px;padding:12px;border-radius:8px;background:linear-gradient(180deg,#fbfff9,#fff);border:1px solid #eef4ec}
+.notif-icon{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#f0f7f0;color:#2f8f2f;font-weight:700}
+.notif-body{flex:1}
+.notif-title{font-size:14px;font-weight:700;color:#213016;margin:0}
+.notif-desc{font-size:13px;color:#5d6a5a;margin-top:4px}
+.notif-actions{display:flex;align-items:center;gap:8px;margin-left:12px}
+.notif-badge{background:#e9f7ef;color:#1b6d2b;padding:6px 10px;border-radius:16px;font-weight:700;font-size:13px}
+.notif-link{background:transparent;border:0;color:#2f8f2f;text-decoration:underline;cursor:pointer;padding:0;font-size:13px}
+
+
+.footer{padding:12px 28px;background:#fff;margin-top:18px;border-radius:6px}
+
+@media (max-width:900px){
+    .sidebar{display:none}
+    .metrics{flex-direction:column}
+    .row{flex-direction:column}
+}
+
+/* Verifikasi User specific */
+.page-title{font-size:20px;font-weight:700;color:#213016;margin:0 0 12px}
+.breadcrumb{font-size:13px;color:#5d6a5a;margin-bottom:12px}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.card-header .title{font-weight:700}
+.card-actions{display:flex;gap:8px}
+.btn{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;color:#fff;font-weight:700;font-size:13px}
+.btn-approve{background:#2f8f2f}
+.btn-reject{background:#d9534f}
+.btn-outline{background:transparent;border:1px solid #cfd8cd;color:#213016}
+.table-wrap{overflow:auto;border-radius:6px}
+.table.table-striped tbody tr:nth-child(odd){background:#fbfdf8}
+
+/* Permohonan styles */
+.permohonan-card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.permohonan-title{font-size:16px;font-weight:700;color:#213016;margin-bottom:12px}
+.table-compact th,.table-compact td{padding:12px 10px;border:1px solid #eef2ee}
+.status-badge{display:inline-block;padding:6px 10px;border-radius:14px;font-weight:700;font-size:12px}
+.status-diajukan{background:#fff4e5;color:#a65f00;border:1px solid #ffe8c9}
+.status-diproses{background:#eef7f0;color:#226b2a;border:1px solid #d8eed8}
+.status-disetujui{background:#eafaf3;color:#0a6b2a;border:1px solid #cfeed8}
+.status-ditolak{background:#fdeeee;color:#8b1c1c;border:1px solid #f7d7d7}
+.file-link{display:inline-block;padding:6px 10px;border-radius:6px;background:#f8f8f8;border:1px solid #e9ece8;color:#2b6b2b;text-decoration:none;font-size:13px}
+.action-form{display:flex;flex-direction:column;gap:8px}
+.action-row{display:flex;gap:8px;align-items:center}
+.small-input{font-size:13px;padding:6px 8px;border:1px solid #dfe8df;border-radius:6px}
+.btn-save{background:#2f8f2f;color:#fff;padding:8px 12px;border-radius:6px;border:0;font-weight:700}
+.btn-secondary{background:transparent;border:1px solid #cfd8cd;color:#213016;padding:8px 10px;border-radius:6px}
+
